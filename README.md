@@ -26,6 +26,12 @@ Servidor en heroku:
 Al acceder al link podra probar la funcionalidad, solo debe ingresar los números separados por comas.
 
 
+#Client Server Test
+
+Ejemplo de como ejecutar e cliente e  imágen del resultado.
+
+![UrlPost](https://github.com/swilsonmelo/ArepParcial1/blob/master/img/test.PNG)
+
 ## Running locally
 
 Compile first time the project after downloaded.
