@@ -21,7 +21,7 @@ El cliente debe traer "quemada" en el código fuente la url de su aplicación de
 
 Servidor en heroku:
 
-    https://swilson-arep-parcial1.herokuapp.com/
+* [swilson-arep-parcial1](https://swilson-arep-parcial1.herokuapp.com)
 
 Al acceder al link podra probar la funcionalidad, solo debe ingresar los números separados por comas.
 
