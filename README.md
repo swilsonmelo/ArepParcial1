@@ -28,7 +28,7 @@ Al acceder al link podra probar la funcionalidad, solo debe ingresar los número
 
 ## Client Server Test
 
-Ejemplo de como ejecutar e cliente e  imágen del resultado.
+Ejemplo de como ejecutar el cliente e imágen del resultado.
 
 ![UrlPost](https://github.com/swilsonmelo/ArepParcial1/blob/master/img/test.PNG)
 
