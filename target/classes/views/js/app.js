@@ -7,8 +7,8 @@ button.addEventListener('click', function () {
     var datos = data.split(",");
 
     console.log(datos);
-    //axios.post('https://swilson-arep-parcial1.herokuapp.com/calculate/', data)
-    axios.post('http://localhost:4567/calculate', data)
+    axios.post('https://swilson-arep-parcial1.herokuapp.com/calculate', data)
+    //axios.post('http://localhost:4567/calculate', data)
         .then(res => {
             console.log("res")
             console.log(res)
