@@ -8,8 +8,11 @@ import java.util.List;
 
 public class solve{
 
-
-
+    /**
+     * Método encargado de llamer el ordenamiento de los datos
+     * @param data datos a ordenar y sumar
+     * @return Json con la lista ordenada y la suma de los elementos
+     */
     public static String calculate(String data){
         //System.out.println("nums "+ nums);
         ArrayList<Double> nums = new ArrayList<Double>();
@@ -21,7 +24,6 @@ public class solve{
             nums.add(newNum);
             sum += newNum;
         }
-
         System.out.println("Lista Base");
         System.out.println(nums.toString());
         System.out.println(sum);
@@ -31,7 +33,7 @@ public class solve{
 
         System.out.println("Lista Ordenada");
         System.out.println(result.toString());
-        
+
         String json ="{\"List\":"+result.toString()+",\"sum\":"+sum+"}";
         System.out.println(json);
         return json;

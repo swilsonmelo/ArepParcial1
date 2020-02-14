@@ -2,7 +2,10 @@ package edu.escuelaing.arep.calculator;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Recursive MergeSort
+ * @param <T>
+ */
 public class RecursiveMergeSort <T extends Comparable <? super T>> {
 
 	
@@ -20,7 +23,8 @@ public class RecursiveMergeSort <T extends Comparable <? super T>> {
 			}
 			for(int i = middle; i < ilist.size(); i++) { 
 				right.add( ilist.get(i) );
-			}						
+            }		
+            //Recursive Call				
 			return merge( mergesort(left), mergesort(right) );
 		}
 	}

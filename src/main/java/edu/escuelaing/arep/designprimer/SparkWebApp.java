@@ -9,25 +9,25 @@ import com.google.gson.Gson;
 
 import edu.escuelaing.arep.calculator.solve;
 
-
+/**
+ * Aplicación web con Spark
+ */
 
 public class SparkWebApp {
 
     
-
     public static void main(String[] args) {
         port(getPort());
-        
-        
-
+                
         staticFiles.location("/views");
         Gson gson = new Gson();
     
-        get("/hello", (req, res) -> { return "Hello Heroku nellll";});
+        get("/hello", (req, res) -> { return "Hello Heroku";});
         
-        post("/calculate", (req, res) -> {
-            //res.type("application/json");
-            // res.status(201);            
+        /*
+        Post Method recibe una cadena que son los números separados por comas.
+        */
+        post("/calculate", (req, res) -> {   
             res.type("application/json");
             System.out.println(req.body());   
             String result = solve.calculate(req.body());   

@@ -12,21 +12,32 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class HttpConnectionService {
+/**
+ * Servidor Cliente para probar el servidor montado en heroku
+ */
+public class EchoClient {
 
+    /**
+     * Método que ejecuta al servidor cliente
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
-        HttpConnectionService service = new HttpConnectionService();
+        EchoClient service = new EchoClient();
         service.performPostCall();
     }
 
-
+    /**
+     * Método encargado del Post, en via como parametro una cadena de números separados por comas
+     * @throws IOException
+     */
     public void performPostCall() throws IOException {
-
-        URL url = new URL("http://localhost:4567/calculate");
+        //Link de heroku
+        URL url = new URL("https://swilson-arep-parcial1.herokuapp.com/calculate");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("POST");
         con.setDoOutput(true);
-        String jsonInputString = "1,2,5,6,7,8";
+        String jsonInputString = "1,20,50,6,7,8";
         try (OutputStream os = con.getOutputStream()) {
             byte[] input = jsonInputString.getBytes("utf-8");
             os.write(input, 0, input.length);
