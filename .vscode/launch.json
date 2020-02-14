@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HttpConnectionService",
+            "request": "launch",
+            "mainClass": "edu.escuelaing.arep.clientSer.HttpConnectionService",
+            "projectName": "ArepParcial1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RecursiveMergeSort",
             "request": "launch",
             "mainClass": "edu.escuelaing.arep.calculator.RecursiveMergeSort",

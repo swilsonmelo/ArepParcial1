@@ -17,26 +17,25 @@ public class SparkWebApp {
 
     public static void main(String[] args) {
         port(getPort());
-        /*
-        get("/hello", (req, res) -> "Hello Heroku nellll");
-        */
+        
+        
+
         staticFiles.location("/views");
         Gson gson = new Gson();
-        get("/", (request, response) -> {
-            response.redirect("/index.html");
-            response.status(200);
-            return null;
-        });
-
-        post("/calculate/", (req, res) -> {
+    
+        get("/hello", (req, res) -> { return "Hello Heroku nellll";});
+        
+        post("/calculate", (req, res) -> {
             //res.type("application/json");
-            // res.status(201);
+            // res.status(201);            
+            res.type("application/json");
             System.out.println(req.body());   
             String result = solve.calculate(req.body());   
             System.out.println(result);                  
             return gson.toJson(result);
 
         });
+        
     }
 
     static int getPort() {
