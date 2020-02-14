@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SparkWebApp",
+            "request": "launch",
+            "mainClass": "edu.escuelaing.arep.designprimer.SparkWebApp",
+            "projectName": "ArepParcial1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "edu.escuelaing.arep.App",
+            "projectName": "ArepParcial1"
+        }
+    ]
+}
