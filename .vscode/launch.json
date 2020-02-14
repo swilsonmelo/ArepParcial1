@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RecursiveMergeSort",
+            "request": "launch",
+            "mainClass": "edu.escuelaing.arep.calculator.RecursiveMergeSort",
+            "projectName": "ArepParcial1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SparkWebApp",
             "request": "launch",
             "mainClass": "edu.escuelaing.arep.designprimer.SparkWebApp",

@@ -7,6 +7,8 @@ import static spark.Spark.staticFiles;
 
 import com.google.gson.Gson;
 
+import edu.escuelaing.arep.calculator.solve;
+
 
 
 public class SparkWebApp {
@@ -20,17 +22,19 @@ public class SparkWebApp {
         */
         staticFiles.location("/views");
         Gson gson = new Gson();
-        get("/statistics", (request, response) -> {
+        get("/", (request, response) -> {
             response.redirect("/index.html");
             response.status(200);
             return null;
         });
 
-        post("/statistics/calculate/", (req, res) -> {
+        post("/calculate/", (req, res) -> {
             //res.type("application/json");
             // res.status(201);
-            System.out.println(req.body());                        
-            return gson.toJson("");
+            System.out.println(req.body());   
+            String result = solve.calculate(req.body());   
+            System.out.println(result);                  
+            return gson.toJson(result);
 
         });
     }
